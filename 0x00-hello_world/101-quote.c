@@ -13,4 +13,4 @@ int main(void)
 
 	write(1, quo, 59);
 	return (1);
-:x
+}
