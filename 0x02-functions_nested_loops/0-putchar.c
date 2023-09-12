@@ -1,11 +1,11 @@
 #include"main.h"
 
 /**
- * main = Entry point
+ * main - Entry point
  *
- * Description: Uses _putchar prototype to print _putchar
+ * Description: uses putchar prototype to print _putchar
  *
- * Return: Always 0
+ * Return: Always 0 (Success)
 */
 
 int main(void)
