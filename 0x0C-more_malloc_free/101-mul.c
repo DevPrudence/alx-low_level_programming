@@ -40,7 +40,7 @@ char *create_xarray(int size)
 
 	array = malloc(sizeof(char) * size);
 
-	if (array == NULL)
+	if (!array)
 		exit(98);
 
 	for (index = 0; index < (size - 1); index++)
@@ -230,3 +230,4 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
+
