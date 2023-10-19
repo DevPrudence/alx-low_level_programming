@@ -28,7 +28,6 @@ list_t *add_node(list_t **head, const char *str)
 	/* Copy string to new node */
 	new_node->str = strdup(str);
 	new_node->len = --c;
-	
 	/* Insert new node at beginning of list */
 	new_node->next = (*head);
 	(*head) = new_node;
