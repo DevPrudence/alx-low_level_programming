@@ -9,7 +9,6 @@ void first(void)
 {
 	/* Print first line of text */
 	printf("You're beat! and yet, you must allow,\n");
-	
 	/* Print  second line of text*/
 	printf("I bore my house upon my back!\n");
 }

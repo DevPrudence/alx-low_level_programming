@@ -1,4 +1,4 @@
-#include "lists.h";
+#include "lists.h"
 
 /**
 * list_len - count the elements of a linked list.
@@ -25,3 +25,4 @@ size_t list_len(const list_t *h)
 /* Return the calculated length */
 return (counter);
 }
+
