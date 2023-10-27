@@ -10,9 +10,9 @@
 unsigned int binary_to_uint(const char *b)
 {
 	/* Declare an integer variable i */
-	int i;
+	int index;
 	/* Declare an unsigned integer variable decimal and initialize it to 0 */
-	unsigned int decimal = 0;
+	unsigned int decimalResult = 0;
 	/* Check if the input string b is NULL */
 	if (b == NULL)
 
@@ -20,13 +20,13 @@ unsigned int binary_to_uint(const char *b)
 	return (0);
 
 	/* Iterate through the binary string */
-	for (i = 0; b[i] != '\0'; ++i)
+	for (index = 0; b[index] != '\0'; ++index)
 	{
 		/**
 		 * Check if the character at index i in the
 		 * string b is not a valid binary digit
 		 */
-		if (b[i] != '0' && b[i] != '1')
+		if (b[index] != '0' && b[index] != '1')
 		/**
 		 * If the character at index i in the string b
 		 * is not a valid binary digit, return 0
@@ -36,8 +36,8 @@ unsigned int binary_to_uint(const char *b)
 		 * Convert the binary digit at index i in the
 		 * string b to decimal and update the result
 		 */
-		decimal = 2 * decimal + (b[i] - '0');
-		/* Return the converted unsigned integer */
-		return (decimal);
+		decimalResult = 2 * decimalResult + (b[index] - '0');
 	}
+	/* Return the converted unsigned integer */
+	return (decimalResult);
 }
