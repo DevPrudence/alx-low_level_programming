@@ -14,7 +14,8 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int write_count1 = 0, write_count2, file_pointer; /* wc1 and wc2 for write count, fp for file pointer */
+	int write_count1 = 0, write_count2, file_pointer;
+	/* wc1 and wc2 for write count, fp for file pointer */
 
 	if (!filename) /* Check if filename is NULL */
 		return (-1);
@@ -26,7 +27,8 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (text_content) /* Check if text_content is not NULL */
 	{
-		while (text_content[write_count1]) /* Count number of characters in text_content */
+		while (text_content[write_count1])
+			/* Count number of characters in text_content */
 			write_count1++;
 
 		/* Write text_content to end of file */
