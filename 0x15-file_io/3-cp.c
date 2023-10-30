@@ -67,8 +67,8 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98); }
 	if (close(sourceFile) < 0) /* Close source file */
-		print_error(sourceFile);
+		printErrorMessage(sourceFile);
 	if (close(destinationFile) < 0) /* Close destination file */
-		print_error(destinationFile);
+		printErrorMessage(destinationFile);
 	return (0); /* Return 0 on success */
 }
